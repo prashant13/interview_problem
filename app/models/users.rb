@@ -7,5 +7,8 @@ class Users < ActiveRecord::Base
 					  :uniqueness => { :case_sensitive => false }
 
 	validates :password, :presence => true,
-	
+
+	has_many :stories
+	has_many :comments
+	has_many :likes
 end
