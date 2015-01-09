@@ -1,6 +1,14 @@
-require 'spec_helper'
+require 'rails_helper'
+require 'shoulda/matchers'
 
 RSpec.describe Likes, :type => :model do
-  it { expect(likes).to belongs_to(:story) }
-  it { expect(likes).to belongs_to(:user) }
+  it "should belong to users" do 
+  	reflection = Users.reflect_on_association(:likes)
+    expect(reflection).to_not be_nil
+  end
+
+  it "should belong to story" do 
+  	reflection = Story.reflect_on_association(:likes)
+  	expect(reflection).to_not be_nil
+  end 
 end

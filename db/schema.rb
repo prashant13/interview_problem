@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108133615) do
+ActiveRecord::Schema.define(version: 20150109073529) do
 
   create_table "comments", force: true do |t|
-    t.string   "context"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20150108133615) do
 
   create_table "stories", force: true do |t|
     t.string   "title"
-    t.string   "context"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

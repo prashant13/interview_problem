@@ -99,6 +99,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    shoulda-context (1.2.1)
+    shoulda-matchers (2.7.0)
+      activesupport (>= 3.0.0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -126,6 +129,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  activemodel
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
@@ -133,6 +137,8 @@ DEPENDENCIES
   rspec-rails (~> 3.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  shoulda-context (~> 1.2.1)
+  shoulda-matchers
   sqlite3
   turbolinks
   tzinfo-data
