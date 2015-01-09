@@ -7,7 +7,7 @@ class Users < ActiveRecord::Base
 
 	validates :password, presence: true
 
-	has_many :stories
+	has_many :stories 
 	has_many :comments
 	has_many :likes
 end
