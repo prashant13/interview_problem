@@ -43,5 +43,4 @@ group :development, :test do
 	gem 'rspec-rails', '~> 3.0'
 	gem 'activemodel'
 	gem 'shoulda-matchers'
-	gem 'shoulda-context', '~> 1.2.1'
 end
